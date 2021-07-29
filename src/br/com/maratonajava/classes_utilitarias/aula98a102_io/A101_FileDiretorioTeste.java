@@ -16,7 +16,7 @@ public class A101_FileDiretorioTeste {
         File diretorio = new File("C:\\Users\\Neto\\Documents\\NetBeansProjects\\MARATONAJAVA\\src\\br\\com\\maratonajava\\classes_utilitarias\\aula"
             + "98a102_io\\folder");
         boolean b = diretorio.mkdir();//mkdir cria um diretório e retorna um boolean    - retorna false se já tiver sido criado
-        System.out.println("Diretório criado? "+b);
+        System.out.println("Diretorio criado? "+b);
         //Para criar o arquivo no diretório criado, poderiamos informar o caminho absoluto, entretanto temos a seguinte forma mais prática:
         File arquivo = new File(diretorio,"arquivo4.txt");//passando como argumento ambos diretório e nome do arquivo 
         boolean b2 = arquivo.createNewFile();
