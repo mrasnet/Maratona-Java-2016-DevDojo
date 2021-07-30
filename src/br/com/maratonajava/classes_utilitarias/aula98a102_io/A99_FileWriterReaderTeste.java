@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- *  Curso Java Completo - Aula 99: IO pt 02 FileWriter e FileReader
+ * Curso Java Completo - Aula 99: IO pt 02 FileWriter e FileReader
  * 
  * Principais classes que iremos utilizar: 
  * 
@@ -21,8 +21,8 @@ import java.io.IOException;
  */
 public class A99_FileWriterReaderTeste {
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\Neto\\Documents\\NetBeansProjects\\MARATONAJAVA\\src\\br\\com\\maratonajava\\classes_utilitarias\\aula"
-            + "98a102_io\\arquivo2.txt");
+        File file = new File("C:\\Users\\Neto\\Desktop\\workspace\\back-end\\MARATONAJAVA\\src\\br\\com\\maratonajava\\classes_utilitarias\\"
+        + "aula98a102_io\\arquivo2.txt");
         
         /*FileWriter recebe um filename ou um arquivo file. Iremos passar um file, porque conforme iremos ver nas próximas aulas, quando começamos a 
         trabalhar com io começamos a encadear diversas classes, essas sendo altamente coesivas (com finalidades muito específicas).
