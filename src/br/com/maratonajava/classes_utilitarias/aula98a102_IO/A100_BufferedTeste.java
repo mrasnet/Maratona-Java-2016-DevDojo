@@ -1,4 +1,4 @@
-package br.com.maratonajava.classes_utilitarias.aula98a102_ia;
+package br.com.maratonajava.classes_utilitarias.aula98a102_IO;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
