@@ -1,4 +1,4 @@
-package br.com.maratonajava.classes_utilitarias.aula98a102_io;
+package br.com.maratonajava.classes_utilitarias.aula98a102_ia;
 
 import java.io.File;
 import java.io.IOException;
