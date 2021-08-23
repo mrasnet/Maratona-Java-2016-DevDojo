@@ -14,13 +14,13 @@ import java.nio.file.Paths;
  * 
  * Existem 3 classes que devemos reparar bastante e que podem acabar nos confundindo:
  * 
- * 1. Path      - (interface) - introduzida para substituir a classe File, nada mais é do que uma conversão que ocorre entre as duas - conversão entre objetos  
+ * 1. Path      - (interface) - introduzida para substituir a classe File, nada mais é do que uma conversão que ocorre entre as duas - conversão entre objetos
  * 
  * E para trabalhar com o Path foram introduzidas mais 2 classes: 
  * 2. Paths     - (classe concreta) - para criar um 'Path' temos que utilizar a classe 'Paths' 
  * 3. Files     - possui métodos estáticos que irão trabalhar com os objetos do tipo Path - novas operações básicas - copiar, deletar arquivos
  * 
- * Como podemos ver a diferença nos nomes são muito parecidos, entretanto, no código é muito igual. Essas são então, as três classes básicas do pacote NIO
+ * Como podemos ver a diferença nos nomes são muito parecidas, entretanto, no código é muito igual. Essas são então, as três classes básicas do pacote NIO
  */
 public class A103_criandoPathTeste {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class A103_criandoPathTeste {
             + "classes_utilitarias\\aula103a114_NIO", "arquivo.txt");
         //Separando com virgula um ou mais diretórios
         Path p3 = Paths.get("C:", "Users\\Neto\\Desktop\\workspace\\back-end\\MARATONAJAVA\\src\\br\\com\\maratonajava\\"
-            + "classes_utilitarias\\aula103a114_NIO","arquivo.txt");
+            + "classes_utilitarias\\aula103a114_NIO", "arquivo.txt");
         //Até mesmo separando tudo da seguinte forma se quisersssemos
         Path p4 = Paths.get("C:", "Users", "Neto", "Desktop", "workspaceback-end", "MARATONAJAVA", "src", "br", "com", "maratonajava",
                "classes_utilitarias", "aula103a114_NIO", "arquivo.txt");
