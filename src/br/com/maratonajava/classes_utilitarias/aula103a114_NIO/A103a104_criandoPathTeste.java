@@ -42,15 +42,15 @@ public class A103a104_criandoPathTeste {
         Path p4 = Paths.get("C:", "Users", "Neto", "Desktop", "workspaceback-end", "MARATONAJAVA", "src", "br", "com", "maratonajava",
                "classes_utilitarias", "aula103a114_NIO", "arquivo.txt");
         
-        /* Essa é uma das novidades do pacote NIO - por um lado fica maior, porém pode ser melhor de visualizar - iremos utilizar os mesmo métodos utilizados
+        /* Essa é uma das novidades do pacote NIO - por um lado fica maior, porém pode ser melhor de visualizar. Iremos utilizar os mesmo métodos utilizados
         com a classe File, só que com as classe Path, Paths e Files */
         System.out.println("Caminho: "+p4.toAbsolutePath());
         
         //Principais métodos que temos na classe Files:
         
         //Podemos realizar conversões entre File e Path da seguinte forma:
-        File file = p4.toFile(); //Path possui o método toFile() para retornar um File
-        Path path = file.toPath();//File possui o método toPath() para retornar um Path
+        File file = p4.toFile(); //Path possui o método 'toFile' para retornar um File
+        Path path = file.toPath();//File possui o método 'toPath' para retornar um Path
         
         //Para criar um novo diretório, não usamos 'mkdir'
         Path path1 = Paths.get("C:\\Users\\Neto\\Desktop\\workspace\\back-end\\MARATONAJAVA\\src\\br\\com\\maratonajava\\"
@@ -82,10 +82,11 @@ public class A103a104_criandoPathTeste {
             e.printStackTrace();
         }
         
-        //Copiando arquivos e renomeando - se tentarmos copiar novamente com o mesmo nome iremos receber um 'FileAlreadyExistsException'
+        //Copiando arquivos e renomeando - se tentarmos copiar novamente com o mesmo nome iremos receber um 'FileAlreadyExistsException'.
+        //Diretório de onde vai ser copiado
         Path source = Paths.get("C:\\Users\\Neto\\Desktop\\workspace\\back-end\\MARATONAJAVA\\src\\br\\com\\maratonajava\\classes_utilitarias\\"
         + "aula98a102_io\\folder\\arquivo4.txt");
-        //As seguintes formas funcionam, porém alguma delas pode ser considerada 'gambiarra'.
+        //As seguintes formas funcionam, porém alguma delas podem ser consideradas 'gambiarra'.
         //Path target = Paths.get(path1.toAbsolutePath()                +"\\arquivo4Copiado.txt");
         //Path target = Paths.get(path1.toAbsolutePath().toString()     +"\\arquivo4Copiado.txt");
         //Path target = Paths.get(path1.toString()                      +"\\arquivo4Copiado.txt");
@@ -98,7 +99,7 @@ public class A103a104_criandoPathTeste {
             de mesmo nome já existir, esse será substituído pelo o novo. */
             Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);//Há várias opções no 'StandardCopyOption'
             
-            //Temos a o metodo 'delete' porém temos também o 'deleteIfExists' que deleta somente se o arquivo existir - retorna true ou false
+            //Temos o metodo 'delete' porém temos também o 'deleteIfExists' que deleta somente se o arquivo existir - retorna true ou false
             Files.deleteIfExists(target);
             
         } catch (IOException e) {
