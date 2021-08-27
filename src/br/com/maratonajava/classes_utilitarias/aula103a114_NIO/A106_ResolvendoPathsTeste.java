@@ -31,17 +31,17 @@ public class A106_ResolvendoPathsTeste {
         A exemplo do que ocorre em 4 e 5, é tentado resolver o caminho absoluto com outro contexto - temos um caminho absoluto sendo conectado a um relativo,
         porém, o caminho absoluto é 'absoluto', não necessita nada antes dele - ele mesmo se resolve - por esse motivo ele foi repetido em '4' e '5'. 
         
-        Assim sempre que tentarmos utilizar um caminho relativo/file para resolver com um caminho absoluto, será retornado a caminho absoluto apenas. Do 
+        Assim, sempre que tentarmos utilizar um caminho relativo/file para resolver com um caminho absoluto, será retornado o caminho absoluto apenas. Do 
         contrário, funciona normalmente.
         
         Em '6' temos um arquivo que tenta resolver com um caminho relativo, porém o resultado não é algo válido para nós.
         */
-        System.out.println("1 : "+absoluto.resolve(relativo));
-        System.out.println("2 : "+absoluto.resolve(file));
-        System.out.println("3 : "+relativo.resolve(file));
-        System.out.println("4 : "+relativo.resolve(absoluto));
-        System.out.println("5 : "+file.resolve(absoluto));
-        System.out.println("6 : "+file.resolve(relativo));
+        System.out.println("1 absoluto com relativo:    "+absoluto.resolve(relativo));
+        System.out.println("2 absoluto com arquivo:     "+absoluto.resolve(file));
+        System.out.println("3 relativo com arquivo:     "+relativo.resolve(file));
+        System.out.println("4 relativo com absoluto:    "+relativo.resolve(absoluto));
+        System.out.println("5 arquivo com absoluto:     "+file.resolve(absoluto));
+        System.out.println("6 arquivo com relativo:     "+file.resolve(relativo));
         
     }
 }
